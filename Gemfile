@@ -22,10 +22,8 @@ gem 'jquery-rails'
 gem "twitter-bootstrap-rails"
 gem 'haml-rails'
 
-gem 'rspec-rails', '2.6.1'
-gem 'annotate', '2.4.0'
-
-
+gem 'gravatar_image_tag', '1.0.0.pre2'
+gem 'inherited_resources'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
