@@ -1,3 +1,8 @@
+<h1>Sign up</h1>
+
+<%= form_for(@user) do |f| %>
+  <%= render 'shared/error_messages', :object => f.object %>
+<% end %>
 <table class="profile" summary="Profile information">
   <tr>
     <td class="main">
@@ -6,9 +11,16 @@
         <%= @user.name %>
       </h1>
     </td>
+    <% unless @user.microposts.empty? %>
+        <table class="microposts" summary="User microposts">
+          <%= render @microposts %>
+        </table>
+        <% end %>
+    </td>
     <td class="sidebar round">
       <strong>Name</strong> <%= @user.name %><br />
-      <strong>URL</strong>  <%= link_to user_path(@user), @user %>
+      <strong>URL</strong> <%= link_to user_path(@user), @user %><br />
+      <strong>Microposts</strong> <%= @user.microposts.count %>
     </td>
   </tr>
 </table>

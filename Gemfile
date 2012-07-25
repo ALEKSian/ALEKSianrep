@@ -24,7 +24,8 @@ gem 'haml-rails'
 
 gem 'gravatar_image_tag', '1.0.0.pre2'
 gem 'inherited_resources'
-
+gem 'kaminari'
+gem 'devise'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
