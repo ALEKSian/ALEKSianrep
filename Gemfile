@@ -21,7 +21,7 @@ end
 gem 'jquery-rails'
 gem "twitter-bootstrap-rails"
 gem 'haml-rails'
-
+gem 'faker', '0.3.1'
 gem 'gravatar_image_tag', '1.0.0.pre2'
 gem 'inherited_resources'
 gem 'kaminari'
